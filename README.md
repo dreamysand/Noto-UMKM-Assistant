@@ -189,11 +189,12 @@ Buat file:
 .env
 ```
 
-Isi minimal:
+Isi dengan kebutuhan reverb:
 
 ```env
-VITE_API_URL=http://localhost:8000
-VITE_APP_NAME=Noto
+VITE_REVERB_APP_KEY=YOUR_APP_KEY
+VITE_REVERB_HOST="localhost"
+VITE_REVERB_PORT=8080
 ```
 
 Kalau ada Reverb / Websocket config tambahkan juga.
