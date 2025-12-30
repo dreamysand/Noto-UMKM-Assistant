@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#2563EB" />
+    <title>Noto UMKM Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.png">
+    <link rel="manifest" href="/manifest.json" />
+    <style>
+      body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; }
+      /* Custom Scrollbar for cleaner look */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 20px; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+    "recharts": "https://esm.sh/recharts@^3.5.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-markdown": "https://esm.sh/react-markdown@^10.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "dexie-react-hooks": "https://esm.sh/dexie-react-hooks@^4.2.0",
+    "dexie": "https://esm.sh/dexie@^4.2.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="src/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
