@@ -63,8 +63,6 @@ export default function Profile({ onClose }) {
         formDataObj.append("uri_image", selectedFile);
       }
 
-      console.log(formDataObj);
-
       const response = await updateUser(formDataObj, userId);
       alert(response.message);
 
@@ -104,15 +102,12 @@ export default function Profile({ onClose }) {
         );
 
         if (!res.ok) return;
-
-        console.log(res);
-
+        
         const blob = await res.blob();
-
-        console.log(URL.createObjectURL(blob));
+        
         setAvatarUrl(URL.createObjectURL(blob));
       } catch (err) {
-        console.log("Avatar gagal dimuat");
+        console.error("Avatar gagal dimuat");
       }
     };
 
