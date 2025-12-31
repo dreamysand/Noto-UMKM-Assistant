@@ -47,8 +47,6 @@ const SmartAdvisor: React.FC = () => {
     await chatService.getAllMessages(user.id)
   ) || [];
 
-  console.log(messages);
-
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
